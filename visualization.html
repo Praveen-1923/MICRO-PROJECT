@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>3D Visualization - ScanLearnAR</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="dashboard-header">
+
+        <h1>ScanLearnAR</h1>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="learning.html">Learning</a>
+            <a href="index.html">Logout</a>
+        </nav>
+
+    </header>
+
+
+    <main class="visualization-page">
+
+        <section class="learning-heading">
+
+            <h2 id="visualizationTitle">
+                3D Visualization
+            </h2>
+
+            <p id="visualizationDescription">
+                Explore the topic in 3D.
+            </p>
+
+        </section>
+
+
+        <div id="canvas-container"></div>
+
+
+       <div class="visualization-controls">
+
+            <button id="rotateButton">
+                Pause Rotation
+            </button>
+
+            <button id="resetButton">
+                 Reset View
+            </button>
+
+            <button id="arButton">
+                AR Mode
+            </button>
+
+            <button id="backButton">
+                Back to Lesson
+            </button>
+
+        </div>
+        <div id="arMessage">
+            Move your phone slowly to find a surface.
+        </div>
+    </main>
+
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three":
+            "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/":
+            "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+
+    <script type="module" src="css/js/visualization.js"></script>
+
+</body>
+
+</html>
